@@ -15,18 +15,61 @@ class ThirdScreenState extends State<ThirdScreen>
   Widget build(BuildContext context)
   {
     return Container(
-      child: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text('Anthony +1-123(456)(7890)',style: TextStyle(fontSize: 25.0),),
-            const Text('Allie +1-123(456)(7890)',style: TextStyle(fontSize: 25.0),),
-            const Text('Pratik +1-123(456)(7890)',style: TextStyle(fontSize: 25.0),),
-            const Text('Tanya +1-123(456)(7890)',style: TextStyle(fontSize: 25.0),)
-          ],
-        ),
+
+      child:  ListView(
+        children: <Widget>[
+      ListTile(
+      leading: CircleAvatar(
+        backgroundColor: Colors.white,
+        backgroundImage: AssetImage('images/1.png'),
+      ),
+      title: Text(
+        'Anthony',
+      ),
+      subtitle: Text('+1-123(456)(7890)'),
+    ),
+    new Divider(
+    height: 1.0,
+    indent: 1.0,
+    ),
+    ListTile(
+    leading: CircleAvatar(
+    backgroundColor: Colors.white,
+    backgroundImage: AssetImage('images/1.png'),
+    ),
+    title: Text('Allie'),
+    subtitle: Text('+1-123(456)(7890)'),
+  ),
+  new Divider(
+  height: 1.0,
+  indent: 1.0,
+  ),
+  ListTile(
+  leading: CircleAvatar(
+  backgroundColor: Colors.white,
+  backgroundImage: AssetImage('images/2.png'),
+  ),
+  title: Text('Pratik'),
+  subtitle: Text('+1-123(456)(7890)'),
+  ),
+  new Divider(
+  height: 1.0,
+  indent: 1.0,
+  ),
+  ListTile(
+  leading: CircleAvatar(
+  backgroundColor: Colors.white,
+  backgroundImage: AssetImage('images/3.png'),
+  ),
+  title: Text(
+  'Tanya',
+  ),
+  subtitle: Text('+1-123(456)(7890)'),
+  ),
+        ],
       ),
     );
   }
-
 }
+
+
